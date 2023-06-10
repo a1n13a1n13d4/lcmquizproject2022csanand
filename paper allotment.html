@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paper Allotment</title>
+	<style type="text/css">
+		body {
+			background-color: #F0E68C;
+			color: black;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			border: 3px solid black;
+		}
+
+		.ab {
+			background-color: #F0E68C;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			border-bottom: black 2px solid;
+		}
+
+		form {
+			margin: 50px auto;
+			width: 550px;
+		}
+
+		h1 {
+			width: 90%;
+			margin: 0 10px 0 10px;
+			text-align: center;
+			font-family: 'Arial Black', Arial, sans-serif;
+			word-spacing: 0.5em;
+		}
+
+		h2 {
+			font-family: 'Times New Roman', Times, serif;
+			margin: 0 10px 0 10px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	        font-size: 16px;
+	        font-weight: bold;
+        	color: #2E8B57;
+		}
+
+		input[type="text"],
+		select {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+			border: 1px solid black;
+		}
+
+		input[type="date"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="textarea"],
+		input[type="password"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+			border: 1px solid black;
+		}
+
+		button {
+			padding: 10px 20px;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 10px;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		button[type="submit"] {
+			background-color: #FF9800; 
+		}
+
+		button[type="reset"] {
+			background-color: #00897B;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #f6bc65;
+		}
+
+		button[type="reset"]:hover {
+			background-color: #51c859;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ab">
+		<a href="https://loyolacollege.ac.in/"><img src="IMG_20230214_083052.png" width=85 alt="Logo" style="float: left;"></a>
+		<img src="logo_of_college2-removebg-preview (1).png" width=85 alt="logo" style="float:right;">
+		<a href=""><h1>LOYOLA COLLEGE,METTALA</h1></a><br>
+		<b><h2>CENTRAL LIBRARY</h2><br></b>
+	</div>
+	<form method="post" name="form1" action="paper allotment.php
+">
+		    <label>Paper ID:</label>
+		    <input type="text" name="paper_id" placeholder="22UCS01/21UFTA01/21UEN01/21UMAA01" required>
+            <label>Staff Name/Enrollment Number:</label>
+		    <input type="text" name="register_number" placeholder="ENTER YOUR ENROLLMENT NUMBER" required>
+		    <label>Department:</label>
+		    <input type="text" name="department" placeholder="DEPARTMENT OF..." required><br>
+		    <label>Year Of Joining:</label>
+		    <input type="text" name="year_of_joining" placeholder="YEAR OF JOIN IN COLLEGE" required>
+		    <a href=""><button type="submit">Submit</button><br><br></a>
+		    <button type="reset">Reset</button>
+		    </form>
+</body>
+</html>

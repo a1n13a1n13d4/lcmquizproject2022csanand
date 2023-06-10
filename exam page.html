@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exam page</title>
+	<style type="text/css">
+        .ab {
+            background-color: #f0f0f0; 
+  
+			font-family: "Times New Roman", serif;
+    
+			color: black; 
+    
+			padding: 10px;
+    
+			text-align: center;
+    
+			border-bottom: black 2px solid;
+
+		}
+        body {
+    background-color: #F5F5F5;
+    color: #333; 
+    font-family: Arial, sans-serif;
+    border: 3px solid black;
+}
+
+h1 {
+    width: 90%;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    word-spacing: 0.5em;
+    font-family: "Times New Roman", serif;
+    color: #006699;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+    color: #00897B;
+    font-size: 16px;
+}
+
+		form {
+			margin: 50px auto;
+			width: 550px;
+		}
+
+		input[type="text"],
+		select {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+			border: 1px solid black;
+			font-family: Arial, sans-serif; 
+			font-size: 16px; 
+			}
+
+		input[type="date"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="textarea"],
+		input[type="password"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+			border: 1px solid black;
+			font-family: Arial, sans-serif; 
+			font-size: 16px; 
+		}
+
+		button {
+			padding: 10px 20px;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 10px;
+			transition: background-color 0.3s ease-in-out;
+			font-family: Arial, sans-serif; 
+			font-size: 16px; 
+		}
+
+		button[type="submit"] {
+			background-color: #FF9800; 
+		}
+
+		button[type="reset"] {
+			background-color: #00897B;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #FFE0B2;
+		}
+
+		button[type="reset"]:hover {
+			background-color: #B2DFDB;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ab">
+		<a href="https://loyolacollege.ac.in/"><img src="IMG_20230214_083052.png" width=85 alt="Logo" style="float: left;"></a>
+		<img src="logo_of_college2-removebg-preview (1).png" width=85 alt="logo" style="float:right;">
+		<a href="loyola video.mp4"><h1>LOYOLA COLLEGE,METTALA</h1></a><br>
+		<b><h2>CENTRAL LIBRARY</h2><br></b>
+	</div>
+	<form method="post" name="form1" action="exam page.php">
+		    <label>Student Name:</label>
+            <input type="text" name="name" placeholder="Name....">
+            <label>Register Number/Roll Number:</label>
+		    <input type="text" name="register_number" placeholder="ENTER YOUR ENROLLMENT NUMBER" required>
+		    <label>Department:</label>
+		    <input type="text" name="department" placeholder="DEPARTMENT OF..." required><br>
+		    <label>Year Of Joining:</label>
+		    <input type="text" name="year_of_joining" placeholder="YEAR OF JOIN IN COLLEGE" required>
+			<label>Paper title:</label>
+		    <input type="text" name="paper_title" placeholder="Allied Maths/Communicative English/Manavalakalai Yoga" required>
+            <label>Paper ID:</label>
+		    <input type="text" name="paper_id" placeholder="22UCS01/21UFTA01/21UEN01/21UMAA01" required>
+		    <a href=""><button type="submit">Submit</button><br><br></a>
+		    <button type="reset">Reset</button>
+		    </form>
+</body>
+</html>
