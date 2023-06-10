@@ -1,110 +1,177 @@
 <!DOCTYPE html>
 <html>
         <div class="ab">
-	    <meta charset="utf-8">
+      <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <img src="IMG_20230214_083052.png" width=65 alt="Logo"  style="float: left;">
-            <img src="logo_of_college2-removebg-preview (1).png" width=65 alt="logo" style="float:right;">
-        <a href="loyola video.mp4"><h1>LOYOLA COLLEGE,METTALA</h1></a><br>
-        <b><h2>CENTRAL LIBRARY</h2><br></b>
-        <hr>
-        </div>
+
 <head>
-	<style type="text/css">
-		body {
-			background-color: lightyellow;
-			color: black;
-			font-family: Arial, sans-serif;
-			border:3px solid black;
-		}
+  <form action="index.php" method="post">
+<div class="question-container">
+  <div class="image-container">
+    <button id="add-image-btn">+</button>
+  </div>
+</div>
 
-        .ab{
-	        color: blue;
-			background-color:white;
-			text-align:center;
-        }
+<div class="image-preview-container">
+  <img id="image-preview">
+</div>
 
-		form {margin: 50px auto;
-			width: 550px;
-		}
-
-		h1{
-	        width: 90%;
-	        margin: 0 10px 0 10px;
-	        text-align: center;
-	        word-spacing: 0.5em;
-        }
-
-         
-		h2{
-		    font-family:TimesNewRoman;
-			margin:0 10px 0 10px;
-		}
-		label {
-			display: block;
-			margin-bottom: 10px;
-		}
-
-		input[type="text"],
-		select {
-			padding: 10px;
-			border-radius: 5px;
-			border: none;
-			width: 100%;
-			margin-bottom: 20px;
-			border:1px solid black;
-		}
-
-		button {
-			padding: 10px 20px;
-			background-color: #4CAF50;
-			color: white;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			margin-right: 10px;
-		}
-
-		button[type="submit"] {
-			background-color: #4CAF50;
-		}
-
-		button[type="reset"] {
-			background-color: #f44336;
-		}
-
-		.link-btn {
-			margin-top: 20px;
-			text-align: center;
-		}
-
-		.link-btn a {
-			background-color: #2196F3;
-			color: #fff;
-			padding: 10px 20px;
-			border-radius: 5px;
-			text-decoration: none;
-		}
-	</style>
+<div class="row-image-container">
+  <div class="row-image-preview-container">
+    <img id="row-image-preview">
+  </div>
+  <div class="row-image-form-container">
+    <form id="row-image-form">
+      <input type="file" id="row-image-input">
+      <button type="submit">UPLOAD</button>
+    </form>
+  </div>
+</div>
 </head>
 <body>
-	<form method="post" name="form1" action="login page.php">
-		<label>Name:</label>
-		<input type="text" name="name" placeholder="Full Name" required>
-		<input type="hidden" name="redirect" value="DEPARTMENT PAGE.html">
-		<label>Register Number/Roll Number:</label>
-		<input type="text" name="register_number" placeholder="ENTER YOUR REGISTER NUMBER" required>
-		<label>DEPARTMENT:</label>
-		<input type="text" name="department" placeholder="DEPARTMENT OF..." required><br>
-		<label>College:</label>
-		<input type="text" name="college" placeholder="COLLEGE NAME" required>
-		<label>Year Of Joining:</label>
-		<input type="text" name="year_of_joining" placeholder="YEAR OF JOIN IN COLLEGE" required>
-		<a href="DEPARTMENT PAGE.html"><button type="submit">Submit</button><br><br></a>
-		<button type="reset">Reset</button>
-		<div class="link-btn">
-			<p>Did you come from other college? <a href="inside_login.html">Click Here</a></p>
-		</div>
-	</form>
+<style>
+.question-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.image-container button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.image-preview-container {
+  display: none;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.row-image-container {
+  display: none;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.row-image-preview-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-image-preview-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.row-image-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-image-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-image-form-container form input[type=file] {
+  margin-bottom: 10px;
+}
+
+.row-image-form-container form button[type=submit] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+</style>
 </body>
+<script type="text/javascript">
+const addImageBtn = document.querySelector('#add-image-btn');
+const questionImageInput = document.createElement('input');
+questionImageInput.type = 'file';
+questionImageInput.name = 'question-image';
+questionImageInput.accept = 'image/*';
+
+addImageBtn.addEventListener('click', () => {
+  const imagePreviewContainer = document.querySelector('.image-preview-container');
+  imagePreviewContainer.style.display = 'block';
+});
+
+questionImageInput.addEventListener('change', () => {
+  const imagePreview = document.querySelector('#image-preview');
+  const file = questionImageInput.files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener('load', () => {
+    imagePreview.setAttribute('src', reader.result);
+  });
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+});
+
+const rowImageForm = document.querySelector('#row-image-form');
+const rowImageInput = document.querySelector('#row-image-input');
+
+rowImageForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(rowImageForm);
+
+  fetch('/quiz.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(imageId => {
+    const rowImagePreview = document.querySelector('#row-image-preview');
+    rowImagePreview.setAttribute('src', `/get-image.php?id=${imageId}`);
+
+    const rowImageContainer = document.querySelector('.row-image-container');
+    rowImageContainer.style.display = 'flex';
+  })
+  .catch(error => console.error(error));
+});
+const questionForm = document.querySelector('#question-form');
+
+questionForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(questionForm);
+
+  fetch(questionForm.action, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(imageId => {
+    // handle response if necessary
+  })
+  .catch(error => console.error(error));
+});
+</script>
 </html>
