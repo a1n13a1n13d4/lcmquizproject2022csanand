@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div class="question-container">
+	<div class="ab">
+	<img src="IMG_20230214_083052.png" width=85 alt="Logo"  style="float: left;">
+	<img src="logo_of_college2-removebg-preview (1).png" width=85 alt="logo" style="float:right;">
+<a href="loyola video.mp4"><h1 style=" text-align: center;">LOYOLA COLLEGE,METTALA</h1></a><br>
+<b><h2 style="text-align: center;">CENTRAL LIBRARY</h2></b>
+    </div>
+	<form id="quiz_form" action="submit.php" method="POST">
+    <h6 style="text-align: left; font-weight: bold; font-size: medium; color: #000080;">Quiz Questions already stored:<?php echo $question_count; ?>/150</h6>
+	<div class="subject-container">
+		<b><label for="subject-code">Subject Code:</label></b>
+		<input type="text" id="subjectcode"name="subjectcode" class="subject-code"><br><br>
+		<b><label for="subject-name">Subject Name:</label></b>
+		<input type="text" id="subjectname" name="subjectname" class="subject-name">
+	</div>
+    <div class="question">
+    <label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 1:</label><br>
+		<textarea type="text" id="q1" name="q1" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q11" name="q1o1" placeholder="Option 1" required>
+		<input type="text" id="q12" name="q1o2" placeholder="Option 2"required>
+		<input type="text" id="q13" name="q1o3" placeholder="Option 3"required>
+		<input type="text" id="q14" name="q1o4" placeholder="Option 4" required>
+	</div class="question"><br>
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 1:</label><br>
+		<input type="text" id="a1" name="a1" placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image1" name="image1">
+		  <label for="image1"><b>+</b></label>
+		</div>
+	  </div>
+	  <img class="preview-image" id="preview1" src="#" alt="Preview Image" style="display: none;">
+	  
+	</div><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 2:</label><br>
+		<textarea type="text" id="q2" name="q2" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q21" name="q2o1" placeholder="Option 1" required>
+		<input type="text" id="q22" name="q2o2" placeholder="Option 2"required>
+		<input type="text" id="q23" name="q2o3" placeholder="Option 3"required>
+		<input type="text" id="q24" name="q2o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 2:</label><br>
+		<input type="text" id="a2" name="a2" placeholder="Answer"required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image2" name="image2">
+		  <label for="image2"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview2" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 3:</label><br>
+		<textarea type="text" id="q3" name="q3" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q31" name="q3o1" placeholder="Option 1" required>
+		<input type="text" id="q32" name="q3o2" placeholder="Option 2"required>
+		<input type="text" id="q33" name="q3o3" placeholder="Option 3"required>
+		<input type="text" id="q34" name="q3o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 3:</label><br>
+		<input type="text" id="a3" name="a3" placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image3" name="image3">
+		  <label for="image3"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview3" src="#" alt="Preview Image" style="display: none;">
+	  
+	</div class="question"><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 4:</label><br>
+		<textarea type="text" id="q4" name="q4" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q41" name="q4o1" placeholder="Option 1" required>
+		<input type="text" id="q42" name="q4o2" placeholder="Option 2"required>
+		<input type="text" id="q43" name="q4o3" placeholder="Option 3"required>
+		<input type="text" id="q44" name="q4o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 4:</label><br>
+		<input type="text" id="a4" name="a4" placeholder="Answer"required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image4" name="image4">
+		  <label for="image4"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview4" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 5:</label><br>
+		<textarea type="text" id="q5" name="q5" placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q51" name="q5o1" placeholder="Option 1" required>
+		<input type="text" id="q52" name="q5o2" placeholder="Option 2"required>
+		<input type="text" id="q53" name="q5o3" placeholder="Option 3"required>
+		<input type="text" id="q54" name="q5o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 5:</label><br>
+		<input type="text" id="a5" name="a5"placeholder="Answer" required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image5" name="image5">
+		  <label for="image5"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview5" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 6:</label><br>
+		<textarea type="text" id="q6" name="q6" placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q61" name="q6o1" placeholder="Option 1" required>
+		<input type="text" id="q62" name="q6o2" placeholder="Option 2"required>
+		<input type="text" id="q63" name="q6o3" placeholder="Option 3"required>
+		<input type="text" id="q64" name="q6o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 6:</label><br>
+		<input type="text" id="a6" name="a6"placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image6" name="image6">
+		  <label for="image6"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview6" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 7:</label><br>
+		<textarea type="text" id="q7" name="q7" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q71" name="q7o1" placeholder="Option 1" required>
+		<input type="text" id="q72" name="q7o2" placeholder="Option 2"required>
+		<input type="text" id="q73" name="q7o3" placeholder="Option 3"required>
+		<input type="text" id="q74" name="q7o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 7:</label><br>
+		<input type="text" id="a7" name="a7" placeholder="Answer"required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image7" name="image7">
+		  <label for="image7"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview7" src="#" alt="Preview Image" style="display: none;">
+	  
+	</div class="question"><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 8:</label><br>
+		<textarea type="text" id="q8" name="q8" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q81" name="q8o1" placeholder="Option 1" required>
+		<input type="text" id="q82" name="q8o2" placeholder="Option 2"required>
+		<input type="text" id="q83" name="q8o3" placeholder="Option 3"required>
+		<input type="text" id="q84" name="q8o4" placeholder="Option 4"required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 8:</label><br>
+		<input type="text" id="a8" name="a8" placeholder="Answer"required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image8" name="image8">
+		  <label for="image8"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview8" src="#" alt="Preview Image" style="display: none;">
+	  
+	</div class="question"><br>
+
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 9:</label><br>
+		<textarea type="text" id="a9" name="q9" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q91" name="q9o1" placeholder="Option 1" required>
+		<input type="text" id="q92" name="q9o2" placeholder="Option 2"required>
+		<input type="text" id="q94" name="q9o3" placeholder="Option 3"required>
+		<input type="text" id="q93" name="q9o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 9:</label><br>
+		<input type="text" id="a9" name="a9"placeholder="Answer" required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image" name="image9">
+		  <label for="image9"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview9" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 10:</label><br>
+		<textarea type="text" id="q10" name="q10" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q101" name="q10o1" placeholder="Option 1" required>
+		<input type="text" id="q102" name="q10o2" placeholder="Option 2"required>
+		<input type="text" id="q103" name="q10o3" placeholder="Option 3"required>
+		<input type="text" id="q104" name="q10o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 10:</label><br>
+		<input type="text" id="a10" name="a10" placeholder="Answer"required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image10" name="image10">
+		  <label for="image10"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview2" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 11:</label><br>
+		<textarea type="text" id="q11" name="q11" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q111" name="q11o1" placeholder="Option 1" required>
+		<input type="text" id="q112" name="q11o2" placeholder="Option 2"required>
+		<input type="text" id="q113" name="q11o3" placeholder="Option 3"required>
+		<input type="text" id="q114" name="q11o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 11:</label><br>
+		<input type="text" id="a11" name="a11" placeholder="Answer"required>
+	</div class="answer-container"> 
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image11" name="image11">
+		  <label for="image11"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview11" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 12:</label><br>
+		<textarea type="text" id="q12" name="q12" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q121" name="q12o1" placeholder="Option 1" required>
+		<input type="text" id="q122" name="q12o2" placeholder="Option 2"required>
+		<input type="text" id="q123" name="q12o3" placeholder="Option 3"required>
+		<input type="text" id="q124" name="q12o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 12:</label><br>
+		<input type="text" id="a12" name="a12"placeholder="Answer" required>
+	</div class="answer-container">	 
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image12" name="image12">
+		  <label for="image12"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview12" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 13:</label><br>
+		<textarea type="text" id="q13" name="q13" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q131" name="q13o1" placeholder="Option 1" required>
+		<input type="text" id="q132" name="q13o2" placeholder="Option 2"required>
+		<input type="text" id="q133" name="q13o3" placeholder="Option 3"required>
+		<input type="text" id="q134" name="q13o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 13:</label><br>
+		<input type="text" id="a13" name="a13"placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image13" name="image13">
+		  <label for="image13"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview13" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+	
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 14:</label><br>
+		<textarea type="text" id="q14" name="q14" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q141" name="q14o1" placeholder="Option 1" required>
+		<input type="text" id="q142" name="q14o2" placeholder="Option 2"required>
+		<input type="text" id="q143" name="q14o3" placeholder="Option 3"required>
+		<input type="text" id="q144" name="q14o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 14:</label><br>
+		<input type="text" id="a14" name="a14"placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image14" name="image14">
+		  <label for="image14"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview14" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 15:</label><br>
+		<textarea type="text" id="q15" name="q15"placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q151" name="q15o1" placeholder="Option 1" required>
+		<input type="text" id="q152" name="q15o2" placeholder="Option 2"required>
+		<input type="text" id="q153" name="q15o3" placeholder="Option 3"required>
+		<input type="text" id="q154" name="q15o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 15:</label><br>
+		<input type="text" id="a15" name="a15" placeholder="Answer"required>
+	</div class="answer-container"> 
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image15" name="image15">
+		  <label for="image15"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview15" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 16:</label><br>
+		<textarea type="text" id="q16" name="q16"placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q161" name="q16o1" placeholder="Option 1" required>
+		<input type="text" id="q162" name="q16o2" placeholder="Option 2"required>
+		<input type="text" id="q163" name="q16o3" placeholder="Option 3"required>
+		<input type="text" id="q164" name="q16o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 16:</label><br>
+		<input type="text" id="a16" name="a16" placeholder="Answer"required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image16" name="image16">
+		  <label for="image16"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview16" src="#" alt="Preview Image" style="display: none;">
+	  
+	</div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 17:</label><br>
+		<textarea type="text" id="q17" name="q17" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q171" name="q17o1" placeholder="Option 1" required>
+		<input type="text" id="q172" name="q17o2" placeholder="Option 2"required>
+		<input type="text" id="q173" name="q17o3" placeholder="Option 3"required>
+		<input type="text" id="q174" name="q17o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 17:</label><br>
+		<input type="text" id="a17" name="a17" placeholder="Answer"required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image17" name="image17">
+		  <label for="image17"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview17" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 18:</label><br>
+		<textarea type="text" id="q18" name="q18" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q181" name="q18o1" placeholder="Option 1" required>
+		<input type="text" id="q182" name="q18o2" placeholder="Option 2"required>
+		<input type="text" id="q183" name="q18o3" placeholder="Option 3"required>
+		<input type="text" id="q184" name="q18o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 18:</label><br>
+		<input type="text" id="a18" name="a18"placeholder="Answer" required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image18" name="image18">
+		  <label for="image18"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview18" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 19:</label><br>
+		<textarea type="text" id="q19" name="q19" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q191" name="q19o1" placeholder="Option 1" required>
+		<input type="text" id="q192" name="q19o2" placeholder="Option 2"required>
+		<input type="text" id="q193" name="q19o3" placeholder="Option 3"required>
+		<input type="text" id="q194" name="q19o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 19:</label><br>
+		<input type="text" id="a19" name="a19" placeholder="Answer"required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image19" name="image19">
+		  <label for="image19"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview19" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 20:</label><br>
+		<textarea type="text" id="q20" name="q20" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q201" name="q20o1" placeholder="Option 1" required>
+		<input type="text" id="q202" name="q20o2" placeholder="Option 2"required>
+		<input type="text" id="q203" name="q20o3" placeholder="Option 3"required>
+		<input type="text" id="q204" name="q20o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 20:</label><br>
+		<input type="text" id="a20" name="a20"placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image20" name="image20">
+		  <label for="image20"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview20" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 21:</label><br>
+		<textarea type="text" id="q21" name="q21"placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q211" name="q21o1" placeholder="Option 1" required>
+		<input type="text" id="q212" name="q21o2" placeholder="Option 2"required>
+		<input type="text" id="q213" name="q21o3" placeholder="Option 3"required>
+		<input type="text" id="q214" name="q21o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 21:</label><br>
+		<input type="text" id="a21" name="a21"placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image21" name="image21">
+		  <label for="image21"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview21" src="#" alt="Preview Image" style="display: none;">
+	  
+	</div class="question"><br>
+
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 22:</label><br>
+		<textarea type="text" id="q22" name="q22"placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q221" name="q22o1" placeholder="Option 1" required>
+		<input type="text" id="q222" name="q22o2" placeholder="Option 2"required>
+		<input type="text" id="q223" name="q22o3" placeholder="Option 3" required>
+		<input type="text" id="q224" name="q22o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 22:</label><br>
+		<input type="text" id="a22" name="a22" placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image22" name="image22">
+		  <label for="image22"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview22" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 23:</label><br>
+		<textarea type="text" id="q23" name="q23" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q231" name="q23o1" placeholder="Option 1" required>
+		<input type="text" id="q232" name="q23o2" placeholder="Option 2"required>
+		<input type="text" id="q233" name="q23o3" placeholder="Option 3"required>
+		<input type="text" id="q234" name="q23o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 23:</label><br>
+		<input type="text" id="a23" name="a23" placeholder="Answer"required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image23" name="image23">
+		  <label for="image23"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview23" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+
+    <div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 24:</label><br>
+		<textarea type="text" id="q24" name="q24"placeholder="Enter your question here" required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q241" name="q24o1" placeholder="Option 1" required>
+		<input type="text" id="q242" name="q24o2" placeholder="Option 2"required>
+		<input type="text" id="q243" name="q24o3" placeholder="Option 3"required>
+		<input type="text" id="q244" name="q24o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 24:</label><br>
+		<input type="text" id="a24" name="a24" placeholder="Answer"required>
+	</div class="answer-container">	
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image24" name="image24">
+		  <label for="image24"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview24" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"><br>
+	<div class="question">
+		<label type="question" style="font-weight: bold; font-family:Georgia,Times New Roman;">Question 25:</label><br>
+		<textarea type="text" id="q25" name="q25" placeholder="Enter your question here"required></textarea><br>
+	<div class="options-container">
+		<input type="text" id="q251" name="q25o1" placeholder="Option 1" required>
+		<input type="text" id="252" name="q25o2" placeholder="Option 2"required>
+		<input type="text" id="q253" name="q25o3" placeholder="Option 3"required>
+		<input type="text" id="q254" name="q25o4" placeholder="Option 4" required>
+	</div class="options-container">
+	<div class="answer-container">
+		<label type="answer" style="font-weight: bold; font-weight:bold;  font-size: max(20, 10);  font-family:Palatino,Palatino Linotype;">Answer 25:</label><br>
+		<input type="text" id="a25" name="a25" placeholder="Answer" required>
+	</div class="answer-container">
+	<div class="image-upload-container">
+		<div class="image-upload">
+		  <input type="file" id="image25" name="image25">
+		  <label for="image25"><b>+</b></label>
+		</div>
+	  </div>
+	  
+	  <img class="preview-image" id="preview25" src="#" alt="Preview Image" style="display: none;">
+	  
+    </div class="question"> 
+		<br><input type="submit" value="Save">
+	</div>
+	</form>
+<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.question-container {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .question-container textarea {
+            height: 100px;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+          
+        .options-container input {
+        margin-bottom: 10px;
+        height: 30px;
+        width: 20%;
+        }
+
+        .answer-container input {
+        margin-bottom: 10px;
+        height: 25px;
+        width: 20%;
+        }
+        .ab {
+            background-color: #f0f0f0; 
+  
+			font-family: "Times New Roman", serif;
+    
+			color: black; 
+    
+			padding: 10px;
+    
+			text-align: center;
+    
+			border-bottom: black 2px solid;
+
+		}
+        h1 {
+    width: 90%;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    word-spacing: 0.5em;
+    font-family: "Times New Roman", serif;
+    color: #006699;
+}
+
+        h2{
+        width: 90%;   	
+        margin: 0 10px 0 10px;    	
+        text-align: center;    	
+        word-spacing: 0.5em;     	
+        font-family: TimesNewRoman;		
+        }
+        .question{
+        	border-bottom: 3px solid black;
+        }
+		.image-upload-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.image-upload {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #006266;
+   color: white;
+   font-size: 20px;
+   cursor: pointer;
+   margin-left: 20px;
+}
+
+.image-upload:hover {
+   background-color: #005049;
+}
+
+.image-upload input[type="file"] {
+   display: none;
+}
+
+.image-upload label {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+ }
+
+.preview-image {
+   max-width: 100%;
+   max-height: 200px;
+   margin-top: 20px;
+}
+
+.subject-container {
+        display: flex;
+        align-items: left;
+		flex-direction: column;
+        font-family: Arial, sans-serif;
+      }
+      .subject-code {
+        width: 200px;
+		font-size: medium;
+		margin-left: 10px;
+      }
+	  .input-container {
+		display: flex;
+		align-items: left;
+		margin-bottom: 10px;
+	}
+	.input-container label {
+		font-weight: bold;
+		margin-right: 10px;
+	}
+      .subject-name {
+        width: 200px;
+		margin-left: 10px;
+		font-size: medium;
+      }
+      
+</style>
+
+	<script>
+		for (let i = 1; i <= 25; i++) {
+			const imageUpload = document.getElementById(`image${i}`);
+			const previewImage = document.getElementById(`preview${i}`);
+			const imageUploadContainer = document.querySelector(`.image-upload-container:nth-of-type(${i})`);
+		  
+			imageUpload.addEventListener("change", function() {
+			  const file = this.files[0];
+			  const reader = new FileReader();
+		  
+			  reader.addEventListener("load", function() {
+				previewImage.setAttribute("src", this.result);
+				previewImage.style.display = "block";
+				imageUploadContainer.classList.add("hide-upload-button");
+			  });
+		  
+			  reader.readAsDataURL(file);
+			});
+		  }
+		</script>
+</body>
+</html>
