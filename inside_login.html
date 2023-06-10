@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="all">
+        <div class="ab">
+            <img src="IMG_20230214_083052.png" width=85 alt="Logo"  style="float: left;">
+            <img src="logo_of_college2-removebg-preview (1).png" width=85 alt="logo" style="float:right;">
+        <a href="loyola video.mp4"><h1>LOYOLA COLLEGE,METTALA</h1></a><br>
+        <b><h2>CENTRAL LIBRARY</h2><br></b>
+        <hr>
+        </div>
+		<div class="header">
+		<img src="index.jpeg" alt="Icon">
+		<a href="https://maps.app.goo.gl/SFfBw3RVnrKucuMQ7"><label for="img_title">Loyola College,Mettala</label></a>
+		</div>
+</head>
+<body>
+<form method="post" name="form2" action="insidelogin_page.php">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="name" required>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" placeholder="Day/Month/Year" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="                                                                                                                                              @gmail.com" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="PASSWORD" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="Phone number" required>
+    
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    
+    <label for="district">District:</label>
+    <input type="text" id="district" name="district" placeholder="District" required>
+    
+    <label for="degree">Studying Degree:</label>
+    <input type="text" id="degree" name="degree" placeholder="Degree you studied" required>
+    
+    <button type="submit" style="text-align:center";>SUBMIT</button><br><br>
+    <input type="reset" name ="reset" value ="RESET"><br><br></div>
+</form>
+<style>
+.all{
+    background: white;
+	border:3px solid orange;
+}
+.ab{
+	background: lightyellow;
+	color: blue;
+}
+h1{
+	width: 90%;
+	margin: 0 10px 0 10px;
+	text-align: center;
+	word-spacing: 0.5em;
+}
+h2{
+	width: 90%;
+	margin: 0 10px 0 10px;
+	text-align: center;
+	word-spacing: 0.5em;
+	font-family: TimesNewRoman;
+}
+h3{
+	width: 90%;
+	margin: 0 10px 0 10px;
+	text-align: center;
+	word-spacing: 0.5em;
+	font-family: Arial Black;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.header img{
+  width:240px;
+  height:180px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="Date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="reset"] { 
+   padding: 10px 20px; 
+   background-color: #3e8e41; 
+   color: white; 
+   border: none; 
+   border-radius: 5px; 
+   cursor: pointer; 
+}
+
+input[type="reset"]:active { 
+   background-color: yellowgreen; 
+}
+
+button[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: whitesmoke;
+  color:black;
+}
+
+.header{
+  padding-left:40%;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+</style>
+</body>
+</html>

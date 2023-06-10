@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+        <div class="ab">
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <img src="IMG_20230214_083052.png" width=65 alt="Logo"  style="float: left;">
+            <img src="logo_of_college2-removebg-preview (1).png" width=65 alt="logo" style="float:right;">
+        <a href="loyola video.mp4"><h1>LOYOLA COLLEGE,METTALA</h1></a><br>
+        <b><h2>CENTRAL LIBRARY</h2><br></b>
+        <hr>
+        </div>
+<head>
+	<style type="text/css">
+		body {
+			background-color: lightyellow;
+			color: black;
+			font-family: Arial, sans-serif;
+			border:3px solid black;
+		}
+
+        .ab{
+	        color: blue;
+			background-color:white;
+			text-align:center;
+        }
+
+		form {margin: 50px auto;
+			width: 550px;
+		}
+
+		h1{
+	        width: 90%;
+	        margin: 0 10px 0 10px;
+	        text-align: center;
+	        word-spacing: 0.5em;
+        }
+
+         
+		h2{
+		    font-family:TimesNewRoman;
+			margin:0 10px 0 10px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"],
+		select {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+			border:1px solid black;
+		}
+
+		button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+
+		button[type="submit"] {
+			background-color: #4CAF50;
+		}
+
+		button[type="reset"] {
+			background-color: #f44336;
+		}
+
+		.link-btn {
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.link-btn a {
+			background-color: #2196F3;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" name="form1" action="login page.php">
+		<label>Name:</label>
+		<input type="text" name="name" placeholder="Full Name" required>
+		<input type="hidden" name="redirect" value="DEPARTMENT PAGE.html">
+		<label>Register Number/Roll Number:</label>
+		<input type="text" name="register_number" placeholder="ENTER YOUR REGISTER NUMBER" required>
+		<label>DEPARTMENT:</label>
+		<input type="text" name="department" placeholder="DEPARTMENT OF..." required><br>
+		<label>College:</label>
+		<input type="text" name="college" placeholder="COLLEGE NAME" required>
+		<label>Year Of Joining:</label>
+		<input type="text" name="year_of_joining" placeholder="YEAR OF JOIN IN COLLEGE" required>
+		<a href="DEPARTMENT PAGE.html"><button type="submit">Submit</button><br><br></a>
+		<button type="reset">Reset</button>
+		<div class="link-btn">
+			<p>Did you come from other college? <a href="inside_login.html">Click Here</a></p>
+		</div>
+	</form>
+</body>
+</html>
